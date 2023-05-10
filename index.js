@@ -15,11 +15,11 @@ app.post("/find-complexity", async (req, res) => {
   try {
     const { prompt } = req.body;
     curMsg=[{role: "system", content: "A curious therapist that asks questions"}]
-    console.log("prompt")
-    console.log()
+    //console.log("prompt")
+    //console.log()
     curMsg=curMsg.concat(prompt)
-    console.log("curMsg")
-    console.log(curMsg)
+    //console.log("curMsg")
+    //console.log(curMsg)
     const response = await openai.createChatCompletion({
       model: "gpt-3.5-turbo",
       messages: curMsg,

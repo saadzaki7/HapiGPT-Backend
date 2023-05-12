@@ -11,7 +11,7 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-app.post("/find-complexity", async (req, res) => {
+app.post("/find-response", async (req, res) => {
   try {
     const { prompt } = req.body;
     curMsg=[{role: "system", content: "A curious therapist that asks questions"}]

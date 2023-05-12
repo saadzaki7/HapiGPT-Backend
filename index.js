@@ -15,8 +15,8 @@ app.post("/find-response", async (req, res) => {
   try {
     const { prompt } = req.body;
     curMsg=[{role: "system", content: "A curious therapist that asks questions"}]
-    console.log("prompt")
-    console.log(prompt)
+    //console.log("prompt")
+    //console.log(prompt)
     curMsg=curMsg.concat(prompt)
     //console.log("curMsg")
     //console.log(curMsg)

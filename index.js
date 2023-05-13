@@ -21,7 +21,7 @@ app.post("/find-response", async (req, res) => {
     //console.log("curMsg")
     //console.log(curMsg)
     const response = await openai.createChatCompletion({
-      model: "gpt-3.5-turbo",
+      model: "text-davinci-003",
       messages: curMsg,
     });
     return res.status(200).json({
